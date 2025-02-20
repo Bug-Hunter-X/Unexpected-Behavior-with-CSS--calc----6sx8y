@@ -1,0 +1,24 @@
+/* bugSolution.css */
+
+/* Correcting the inconsistent unit issue */
+.correct-units {
+  width: calc(100% - 20px);
+}
+
+/* Correcting whitespace error */
+.correct-whitespace {
+  height: calc(50vh - 10px);
+}
+
+/* Handling the case when the parent element doesn't have defined size */
+.handle-undefined-parent {
+  width: 50%; /*Set width for parent element */
+}
+.handle-undefined-parent > div{
+    width: calc(100% - 10px);
+}
+
+/*Example of handling a complex calculation*/
+.complex-calc {
+  width: calc((100vw - 20px) / 2);
+}
